@@ -43,6 +43,8 @@
   }
   .nav{display:flex;align-items:center;justify-content:space-between;padding:18px 32px;max-width:1240px;margin:0 auto;}
   .logo{font-family:'Inter',sans-serif;font-size:20px;font-weight:800;letter-spacing:-0.01em;}
+  .logo img{height:30px;width:auto;display:block;}
+  footer .logo img{height:32px;}
   .logo span{color:var(--gold);}
   .navlinks{display:flex;gap:36px;font-size:14px;color:var(--ink-dim);}
   .navlinks a:hover{color:var(--ink);}

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us | Afken Global Wealth</title>
+<meta name="description" content="Book a consultation or request a quote from Afken Global Wealth. National offices, dedicated advisors, no obligation.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .breadcrumb{font-size:13px;color:var(--ink-faint);margin-bottom:22px;}
+  .breadcrumb a{color:var(--ink-faint);}
+  .breadcrumb a:hover{color:var(--teal);}
+  .page-hero{padding:170px 0 60px;}
+  .page-hero h1{font-size:clamp(34px,4.6vw,56px);font-weight:800;letter-spacing:-0.02em;line-height:1.08;max-width:680px;}
+  .page-hero p{margin-top:22px;font-size:17px;line-height:1.7;color:var(--ink-dim);max-width:560px;}
+
+  .contact-section{padding:0 0 110px;}
+  .contact-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:64px;}
+
+  .info-card{border:1px solid var(--hairline);border-radius:18px;padding:32px;margin-bottom:20px;}
+  .info-card h3{font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:0.04em;color:var(--ink-faint);}
+  .info-card .val{font-size:18px;font-weight:700;margin-top:10px;}
+  .info-card .sub{font-size:13.5px;color:var(--ink-dim);margin-top:6px;line-height:1.6;}
+
+  .form-panel{background:var(--surface);border:1px solid var(--hairline);border-radius:20px;padding:44px;}
+  .form-row{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:18px;}
+  .field{display:flex;flex-direction:column;gap:8px;}
+  .field.full{grid-column:span 2;}
+  .field label{font-size:13px;font-weight:600;color:var(--ink);}
+  .field input, .field select, .field textarea{
+    border:1px solid var(--hairline);border-radius:10px;padding:13px 16px;font-size:14.5px;
+    font-family:'Inter',sans-serif;background:#fff;color:var(--ink);
+  }
+  .field input:focus, .field select:focus, .field textarea:focus{outline:none;border-color:var(--teal);}
+  .field textarea{resize:vertical;min-height:100px;}
+  .interest-pills{display:flex;flex-wrap:wrap;gap:10px;}
+  .interest-pill{font-size:13px;border:1px solid var(--hairline);background:#fff;padding:9px 16px;border-radius:30px;cursor:pointer;color:var(--ink-dim);}
+  .interest-pill.selected{background:var(--teal);color:#fff;border-color:var(--teal);}
+  .submit-row{margin-top:8px;display:flex;align-items:center;gap:16px;}
+  .form-note{font-size:12px;color:var(--ink-faint);}
+
+  @media(max-width:880px){
+    .contact-grid{grid-template-columns:1fr;gap:36px;}
+    .form-row{grid-template-columns:1fr;}
+    .field.full{grid-column:span 1;}
+    .form-panel{padding:28px;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <nav class="nav">
+    <div class="logo"><img src="../assets/images/afken-logo-black.png" alt="Afken Global Wealth"></div>
+    <div class="navlinks">
+      <a href="../index.html#solutions">Solutions</a>
+      <a href="../index.html#process">Approach</a>
+      <a href="insights.html">Insights</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <a href="contact.html" class="nav-cta">Book a Consultation</a>
+  </nav>
+</header>
+
+<section class="page-hero">
+  <div class="wrap">
+    <div class="breadcrumb"><a href="../index.html">Home</a> / Contact</div>
+    <div class="eyebrow">Get In Touch</div>
+    <h1 style="margin-top:16px;">Let's put a plan on the table.</h1>
+    <p>Book a no-obligation consultation, request an insurance quote, or just ask a question — a real advisor will get back to you, not an autoresponder.</p>
+  </div>
+</section>
+
+<section class="contact-section">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div>
+        <div class="info-card">
+          <h3>Email</h3>
+          <div class="val">contact@afken.co.za</div>
+          <div class="sub">General enquiries &amp; consultation bookings</div>
+        </div>
+        <div class="info-card">
+          <h3>Phone</h3>
+          <div class="val">+27 (0)11 000 0000</div>
+          <div class="sub">Mon – Fri, 08:00 – 17:00 SAST</div>
+        </div>
+        <div class="info-card">
+          <h3>Claims &amp; Support</h3>
+          <div class="val">claims@afken.co.za</div>
+          <div class="sub">Existing clients — submission &amp; follow-up support</div>
+        </div>
+        <div class="info-card">
+          <h3>Offices</h3>
+          <div class="val">National Footprint</div>
+          <div class="sub">Advisors available across South Africa's major centres — we'll connect you with the closest team.</div>
+        </div>
+      </div>
+
+      <div class="form-panel">
+        <div class="eyebrow" style="margin-bottom:10px;">Send a Message</div>
+        <h2 style="font-size:24px;font-weight:800;margin-bottom:28px;">Tell us what you need.</h2>
+
+        <form onsubmit="event.preventDefault(); alert('This is a design preview — connect this form to your CRM or email handler before going live.');">
+          <div class="form-row">
+            <div class="field"><label>Full Name</label><input type="text" required placeholder="Jane Dlamini"></div>
+            <div class="field"><label>Email Address</label><input type="email" required placeholder="jane@email.com"></div>
+          </div>
+          <div class="form-row">
+            <div class="field"><label>Phone Number</label><input type="tel" placeholder="082 000 0000"></div>
+            <div class="field"><label>Preferred Contact Time</label>
+              <select><option>Morning</option><option>Afternoon</option><option>Evening</option></select>
+            </div>
+          </div>
+          <div class="field full" style="margin-bottom:18px;">
+            <label>I'm interested in</label>
+            <div class="interest-pills">
+              <span class="interest-pill">Wealth Management</span>
+              <span class="interest-pill">Risk Management</span>
+              <span class="interest-pill">SME &amp; Corporate</span>
+              <span class="interest-pill">Health &amp; Wellness</span>
+              <span class="interest-pill">Insurance Quote</span>
+            </div>
+          </div>
+          <div class="field full" style="margin-bottom:24px;">
+            <label>Message</label>
+            <textarea placeholder="Tell us a bit about what you're looking for..."></textarea>
+          </div>
+          <div class="submit-row">
+            <button type="submit" class="btn-primary" style="border:none;cursor:pointer;">Send Message</button>
+            <span class="form-note">We typically respond within one business day.</span>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-col">
+        <div class="logo" style="margin-bottom:18px;"><img src="../assets/images/afken-logo-white.png" alt="Afken Global Wealth"></div>
+        <p style="color:var(--ink-dim);font-size:14px;line-height:1.7;max-width:280px;">Independent financial planning and wealth management, advising individuals, families and businesses nationally.</p>
+      </div>
+      <div class="foot-col">
+        <h4>Solutions</h4>
+        <a href="wealth.html">Wealth Management</a>
+        <a href="risk.html">Risk Management</a>
+        <a href="sme.html">SME &amp; Corporate</a>
+        <a href="health.html">Health &amp; Wellness</a>
+      </div>
+      <div class="foot-col">
+        <h4>Company</h4>
+        <a href="about.html">About Us</a>
+        <a href="about.html#team">Our Team</a>
+        <a href="careers.html">Careers</a>
+        <a href="#">Outreach Projects</a>
+      </div>
+      <div class="foot-col">
+        <h4>Contact</h4>
+        <a href="contact.html">contact@afken.co.za</a>
+        <a href="contact.html">+27 (0)11 000 0000</a>
+        <a href="#">Claims &amp; Downloads</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <div>© 2026 Afken Global Wealth. All rights reserved.</div>
+      <div>Authorised Financial Services Provider</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.querySelectorAll('.interest-pill').forEach(p=>{
+    p.addEventListener('click', ()=> p.classList.toggle('selected'));
+  });
+</script>
+
+</body>
+</html>

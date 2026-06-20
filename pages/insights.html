@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Insights | Afken Global Wealth</title>
+<meta name="description" content="Practical reading on wealth, risk, business and estate planning decisions from the Afken Global Wealth advisory team.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .breadcrumb{font-size:13px;color:var(--ink-faint);margin-bottom:22px;}
+  .breadcrumb a{color:var(--ink-faint);}
+  .breadcrumb a:hover{color:var(--teal);}
+  .page-hero{padding:170px 0 60px;border-bottom:1px solid var(--hairline);}
+  .page-hero h1{font-size:clamp(34px,4.6vw,56px);font-weight:800;letter-spacing:-0.02em;line-height:1.08;max-width:680px;}
+  .page-hero p{margin-top:22px;font-size:17px;line-height:1.7;color:var(--ink-dim);max-width:580px;}
+
+  .filters{padding:28px 0;border-bottom:1px solid var(--hairline);}
+  .filters .wrap{display:flex;gap:10px;flex-wrap:wrap;}
+  .filter-pill{font-size:13px;font-weight:600;padding:9px 18px;border-radius:30px;border:1px solid var(--hairline);color:var(--ink-dim);}
+  .filter-pill.active{background:var(--teal);color:#fff;border-color:var(--teal);}
+
+  .articles{padding:90px 0;}
+  .articles-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;}
+  .article-card{border:1px solid var(--hairline);border-radius:18px;overflow:hidden;transition:box-shadow .3s ease, transform .3s ease;}
+  .article-card:hover{transform:translateY(-4px);box-shadow:0 16px 32px rgba(28,32,36,0.08);}
+  .article-media{aspect-ratio:16/10;background:linear-gradient(135deg,var(--surface) 0%,var(--surface-2) 100%);display:flex;align-items:center;justify-content:center;}
+  .article-media .img-placeholder-label{font-size:11px;color:var(--ink-faint);text-align:center;padding:18px;}
+  .article-body{padding:26px;}
+  .article-cat{font-size:11px;color:var(--teal);text-transform:uppercase;letter-spacing:0.06em;font-weight:700;}
+  .article-body h3{font-size:19px;font-weight:700;margin-top:14px;line-height:1.3;}
+  .article-body p{color:var(--ink-dim);font-size:14px;margin-top:12px;line-height:1.7;}
+  .article-meta{margin-top:20px;font-size:12px;color:var(--ink-faint);border-top:1px solid var(--hairline);padding-top:16px;display:flex;justify-content:space-between;}
+
+  .article-card.featured{grid-column:span 3;display:grid;grid-template-columns:1.1fr 1fr;}
+  .article-card.featured .article-media{aspect-ratio:auto;}
+  .article-card.featured .article-body{display:flex;flex-direction:column;justify-content:center;}
+  .article-card.featured h3{font-size:26px;}
+
+  @media(max-width:880px){
+    .articles-grid{grid-template-columns:1fr;}
+    .article-card.featured{grid-column:span 1;grid-template-columns:1fr;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <nav class="nav">
+    <div class="logo"><img src="../assets/images/afken-logo-black.png" alt="Afken Global Wealth"></div>
+    <div class="navlinks">
+      <a href="../index.html#solutions">Solutions</a>
+      <a href="../index.html#process">Approach</a>
+      <a href="insights.html">Insights</a>
+      <a href="about.html">About</a>
+      <a href="../index.html#contact">Contact</a>
+    </div>
+    <a href="contact.html" class="nav-cta">Book a Consultation</a>
+  </nav>
+</header>
+
+<section class="page-hero">
+  <div class="wrap">
+    <div class="breadcrumb"><a href="../index.html">Home</a> / Insights</div>
+    <div class="eyebrow">Insights</div>
+    <h1 style="margin-top:16px;">Thinking, not just transactions.</h1>
+    <p>Practical reading on the decisions that shape long-term wealth — drawn from our advisors' day-to-day work with clients across wealth, risk, business and health planning.</p>
+  </div>
+</section>
+
+<div class="filters">
+  <div class="wrap">
+    <span class="filter-pill active">All</span>
+    <span class="filter-pill">Wealth Management</span>
+    <span class="filter-pill">Risk Management</span>
+    <span class="filter-pill">Business</span>
+    <span class="filter-pill">Health</span>
+    <span class="filter-pill">Estate Planning</span>
+  </div>
+</div>
+
+<section class="articles">
+  <div class="wrap">
+    <div class="articles-grid">
+
+      <div class="article-card featured">
+        <div class="article-media"><div class="img-placeholder-label">Featured article image</div></div>
+        <div class="article-body">
+          <div class="article-cat">Estate Planning</div>
+          <h3>What happens to your estate without an updated will</h3>
+          <p>Intestate succession rarely matches what families actually intend. Here's exactly what changes when a will is current versus outdated — or absent entirely — and the practical steps to fix it this month.</p>
+          <div class="article-meta"><span>6 MIN READ</span><span>Updated June 2026</span></div>
+        </div>
+      </div>
+
+      <div class="article-card">
+        <div class="article-media"><div class="img-placeholder-label">Article image</div></div>
+        <div class="article-body">
+          <div class="article-cat">Risk Management</div>
+          <h3>Income protection vs. disability cover: you likely need both</h3>
+          <p>The two are often confused as interchangeable. We break down where each one actually pays out, and the gap that sits between them.</p>
+          <div class="article-meta"><span>5 MIN READ</span><span>May 2026</span></div>
+        </div>
+      </div>
+
+      <div class="article-card">
+        <div class="article-media"><div class="img-placeholder-label">Article image</div></div>
+        <div class="article-body">
+          <div class="article-cat">Business</div>
+          <h3>Buy-and-sell agreements: the conversation founders avoid</h3>
+          <p>What happens to your share of the business if your partner dies tomorrow? Most agreements are written too late, or not at all.</p>
+          <div class="article-meta"><span>7 MIN READ</span><span>May 2026</span></div>
+        </div>
+      </div>
+
+      <div class="article-card">
+        <div class="article-media"><div class="img-placeholder-label">Article image</div></div>
+        <div class="article-body">
+          <div class="article-cat">Health</div>
+          <h3>Medical aid vs. gap cover: where the real shortfall hides</h3>
+          <p>Even top-tier medical aid plans rarely cover 100% of specialist costs. Here's how to calculate your actual exposure.</p>
+          <div class="article-meta"><span>4 MIN READ</span><span>April 2026</span></div>
+        </div>
+      </div>
+
+      <div class="article-card">
+        <div class="article-media"><div class="img-placeholder-label">Article image</div></div>
+        <div class="article-body">
+          <div class="article-cat">Wealth Management</div>
+          <h3>Offshore investing: how much of your portfolio should leave South Africa</h3>
+          <p>Currency risk cuts both ways. A practical framework for sizing your offshore allocation against your actual goals.</p>
+          <div class="article-meta"><span>6 MIN READ</span><span>April 2026</span></div>
+        </div>
+      </div>
+
+      <div class="article-card">
+        <div class="article-media"><div class="img-placeholder-label">Article image</div></div>
+        <div class="article-body">
+          <div class="article-cat">Business</div>
+          <h3>Keyman cover: valuing the person your business can't afford to lose</h3>
+          <p>How to put an honest number on a founder, technical lead or top performer — and fund the gap if they're suddenly unavailable.</p>
+          <div class="article-meta"><span>5 MIN READ</span><span>March 2026</span></div>
+        </div>
+      </div>
+
+      <div class="article-card">
+        <div class="article-media"><div class="img-placeholder-label">Article image</div></div>
+        <div class="article-body">
+          <div class="article-cat">Estate Planning</div>
+          <h3>Trusts explained: when they help, and when they're overkill</h3>
+          <p>A trust isn't automatically the right answer for every estate. Here's how to know if one actually fits your situation.</p>
+          <div class="article-meta"><span>6 MIN READ</span><span>March 2026</span></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="cta-band" id="contact">
+  <div class="wrap">
+    <div class="eyebrow" style="justify-content:center;">Get Started</div>
+    <h2 style="margin-top:16px;">Have a question this didn't answer?</h2>
+    <p>A short call with an advisor will get you a straight answer, specific to your situation.</p>
+    <div class="hero-ctas">
+      <a href="contact.html" class="btn-primary">Book a Consultation</a>
+      <a href="../index.html#solutions" class="btn-ghost">Explore Solutions</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-col">
+        <div class="logo" style="margin-bottom:18px;"><img src="../assets/images/afken-logo-white.png" alt="Afken Global Wealth"></div>
+        <p style="color:var(--ink-dim);font-size:14px;line-height:1.7;max-width:280px;">Independent financial planning and wealth management, advising individuals, families and businesses nationally.</p>
+      </div>
+      <div class="foot-col">
+        <h4>Solutions</h4>
+        <a href="wealth.html">Wealth Management</a>
+        <a href="risk.html">Risk Management</a>
+        <a href="sme.html">SME &amp; Corporate</a>
+        <a href="health.html">Health &amp; Wellness</a>
+      </div>
+      <div class="foot-col">
+        <h4>Company</h4>
+        <a href="about.html">About Us</a>
+        <a href="about.html#team">Our Team</a>
+        <a href="careers.html">Careers</a>
+        <a href="#">Outreach Projects</a>
+      </div>
+      <div class="foot-col">
+        <h4>Contact</h4>
+        <a href="contact.html">contact@afken.co.za</a>
+        <a href="contact.html">+27 (0)11 000 0000</a>
+        <a href="#">Claims &amp; Downloads</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <div>© 2026 Afken Global Wealth. All rights reserved.</div>
+      <div>Authorised Financial Services Provider</div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
