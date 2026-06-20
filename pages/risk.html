@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Risk Management | Afken Global Wealth</title>
+<meta name="description" content="Life, disability, severe illness and income protection cover, plus specialist short-term insurance for vehicles, homes, pleasure craft and private collections.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .breadcrumb{font-size:13px;color:var(--ink-faint);margin-bottom:22px;}
+  .breadcrumb a{color:var(--ink-faint);}
+  .breadcrumb a:hover{color:var(--teal);}
+  .page-hero{padding:170px 0 70px;border-bottom:1px solid var(--hairline);}
+  .page-hero h1{font-size:clamp(34px,4.6vw,56px);font-weight:800;letter-spacing:-0.02em;line-height:1.08;max-width:760px;}
+  .page-hero p{margin-top:22px;font-size:17px;line-height:1.7;color:var(--ink-dim);max-width:600px;}
+
+  .subnav{position:sticky;top:73px;z-index:50;background:#fff;border-bottom:1px solid var(--hairline);}
+  .subnav-inner{display:flex;gap:0;overflow-x:auto;}
+  .subnav a{white-space:nowrap;font-size:13.5px;font-weight:600;color:var(--ink-faint);padding:18px 20px;border-bottom:2px solid transparent;}
+  .subnav a:hover{color:var(--teal);}
+  .subnav a.active{color:var(--teal);border-bottom-color:var(--teal);}
+
+  .topic{padding:90px 0;border-bottom:1px solid var(--hairline);scroll-margin-top:130px;}
+  .topic:nth-child(even){background:var(--surface);}
+  .topic-grid{display:grid;grid-template-columns:0.9fr 1.1fr;gap:64px;}
+  .topic-grid.reverse{grid-template-columns:1.1fr 0.9fr;}
+  .topic-grid.reverse .topic-media{order:2;}
+  .topic h2{font-size:clamp(24px,2.6vw,32px);font-weight:800;letter-spacing:-0.01em;line-height:1.2;}
+  .topic .lede{font-size:15.5px;color:var(--ink-dim);line-height:1.75;margin-top:18px;}
+  .topic-list{margin-top:24px;display:flex;flex-direction:column;gap:14px;}
+  .topic-list li{list-style:none;display:flex;gap:12px;font-size:14.5px;color:var(--ink-dim);line-height:1.6;}
+  .topic-list li::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--teal);margin-top:8px;flex-shrink:0;}
+  .topic-media{border-radius:18px;background:linear-gradient(135deg,var(--surface) 0%,var(--surface-2) 100%);border:1px solid var(--hairline);display:flex;align-items:center;justify-content:center;min-height:280px;}
+  .topic-media .img-placeholder-label{font-size:12px;color:var(--ink-faint);text-align:center;padding:24px;}
+
+  .faq{padding:110px 0;}
+  .faq-item{border-bottom:1px solid var(--hairline);}
+  .faq-q{width:100%;text-align:left;background:none;border:none;cursor:pointer;padding:24px 0;display:flex;justify-content:space-between;align-items:center;gap:20px;font-size:16px;font-weight:600;color:var(--ink);font-family:'Inter',sans-serif;}
+  .faq-q .plus{font-size:20px;color:var(--teal);transition:transform .25s ease;flex-shrink:0;}
+  .faq-item.open .faq-q .plus{transform:rotate(45deg);}
+  .faq-a{max-height:0;overflow:hidden;transition:max-height .3s ease;}
+  .faq-item.open .faq-a{max-height:300px;}
+  .faq-a p{padding-bottom:24px;font-size:14.5px;color:var(--ink-dim);line-height:1.75;max-width:680px;}
+
+  .case-study{background:var(--footer-dark);padding:90px 0;color:#fff;}
+  .case-study .eyebrow{color:#7FB8B9;}
+  .case-study .eyebrow::before{background:#3D6E70;}
+  .case-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;margin-top:30px;align-items:center;}
+  .case-grid h2{font-size:clamp(24px,2.8vw,34px);font-weight:800;line-height:1.25;color:#fff;}
+  .case-grid p{color:#B8BCC0;font-size:15px;line-height:1.75;margin-top:18px;}
+  .case-stats{display:grid;grid-template-columns:1fr 1fr;gap:24px;}
+  .case-stat{border:1px solid #2C3236;border-radius:14px;padding:24px;}
+  .case-stat .num{font-size:28px;font-weight:800;color:#fff;}
+  .case-stat .label{font-size:12px;color:#8A8E92;margin-top:6px;}
+  @media(max-width:880px){
+    .topic-grid, .topic-grid.reverse{grid-template-columns:1fr;gap:32px;}
+    .topic-grid.reverse .topic-media{order:0;}
+    .case-grid{grid-template-columns:1fr;gap:32px;}
+    .case-stats{grid-template-columns:1fr 1fr;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <nav class="nav">
+    <div class="logo">AFKEN<span>·</span>GLOBAL WEALTH</div>
+    <div class="navlinks">
+      <a href="../index.html#solutions">Solutions</a>
+      <a href="../index.html#process">Approach</a>
+      <a href="../index.html#insights">Insights</a>
+      <a href="about.html">About</a>
+      <a href="../index.html#contact">Contact</a>
+    </div>
+    <a href="../index.html#contact" class="nav-cta">Book a Consultation</a>
+  </nav>
+</header>
+
+<section class="page-hero">
+  <div class="wrap">
+    <div class="breadcrumb"><a href="../index.html">Home</a> / <a href="../index.html#solutions">Our Solutions</a> / Risk Management</div>
+    <div class="eyebrow">02 — Risk Management</div>
+    <h1 style="margin-top:16px;">Protection built around what you actually can't afford to lose.</h1>
+    <p>Income, health, dependants, and the assets you've spent years building — each needs a different kind of protection. We structure cover so it actually pays out when it matters, not just when it's convenient.</p>
+  </div>
+</section>
+
+<nav class="subnav">
+  <div class="wrap subnav-inner">
+    <a href="#life" class="active">Life Cover</a>
+    <a href="#disability">Disability</a>
+    <a href="#severe-illness">Severe Illness</a>
+    <a href="#income-protection">Income Protection</a>
+    <a href="#specialist-assets">Specialist Assets</a>
+  </div>
+</nav>
+<section class="topic" id="life">
+  <div class="wrap">
+    <div class="topic-grid">
+      <div>
+        <div class="eyebrow">Protection</div>
+        <h2 style="margin-top:14px;">Life Cover</h2>
+        <p class="lede">Life cover exists to replace what your income and presence provide — debt settlement, ongoing household costs, and your family's plans staying intact. We size it to the actual gap, not a rule of thumb.</p>
+        <ul class="topic-list">
+          <li>Needs-based cover calculation: debt, income replacement, and dependants' future costs</li>
+          <li>Beneficiary nomination structuring to avoid estate delays</li>
+          <li>Policy reviews triggered by bond changes, new dependants, or business growth</li>
+          <li>Co-ordination with your will and estate plan so payouts go where intended</li>
+        </ul>
+      </div>
+      <div class="topic-media">
+        <div class="img-placeholder-label">Lifestyle photography —<br>young family, home</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="topic" id="disability">
+  <div class="wrap">
+    <div class="topic-grid reverse">
+      <div>
+        <div class="eyebrow">Protection</div>
+        <h2 style="margin-top:14px;">Disability Cover</h2>
+        <p class="lede">A disability that prevents you from working is statistically far more likely than an early death — yet it's the cover most people underinsure. We make sure lump-sum and income-replacement disability cover both feature in your plan.</p>
+        <ul class="topic-list">
+          <li>Lump-sum disability cover for major capital needs — home modifications, debt settlement</li>
+          <li>Own-occupation vs any-occupation definitions explained in plain terms before you sign</li>
+          <li>Coordination with income protection so there's no gap between policies</li>
+          <li>Regular occupation and income reviews to keep cover sized correctly</li>
+        </ul>
+      </div>
+      <div class="topic-media">
+        <div class="img-placeholder-label">Lifestyle photography —<br>advisor consultation, document review</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="topic" id="severe-illness">
+  <div class="wrap">
+    <div class="topic-grid">
+      <div>
+        <div class="eyebrow">Protection</div>
+        <h2 style="margin-top:14px;">Severe Illness Cover</h2>
+        <p class="lede">A cancer, stroke or heart attack diagnosis brings costs medical aid won't fully cover — and an income gap while you recover. Severe illness cover pays a lump sum directly to you, to use as needed.</p>
+        <ul class="topic-list">
+          <li>Condition-specific payout structuring across major illness categories</li>
+          <li>Integration with medical aid and gap cover to close out-of-pocket gaps</li>
+          <li>Family history and occupational risk factored into cover recommendations</li>
+        </ul>
+      </div>
+      <div class="topic-media">
+        <div class="img-placeholder-label">Lifestyle photography —<br>recovery, wellbeing</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="topic" id="income-protection">
+  <div class="wrap">
+    <div class="topic-grid reverse">
+      <div>
+        <div class="eyebrow">Protection</div>
+        <h2 style="margin-top:14px;">Income Protection</h2>
+        <p class="lede">If you're temporarily unable to work, income protection replaces a portion of your salary monthly — covering the gap that lump-sum cover alone doesn't address.</p>
+        <ul class="topic-list">
+          <li>Monthly income replacement structured against your actual take-home pay</li>
+          <li>Waiting period and benefit term selection matched to your savings buffer</li>
+          <li>Particularly critical for self-employed clients and commission-based earners</li>
+        </ul>
+      </div>
+      <div class="topic-media">
+        <div class="img-placeholder-label">Lifestyle photography —<br>self-employed professional, working from home</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="topic" id="specialist-assets">
+  <div class="wrap">
+    <div class="topic-grid">
+      <div>
+        <div class="eyebrow">Short-Term Insurance</div>
+        <h2 style="margin-top:14px;">Specialist Asset Cover</h2>
+        <p class="lede">Standard household policies often under-cover or simply exclude high-value vehicles, pleasure craft, art and private collections. We source specialist cover that actually understands what you own.</p>
+        <ul class="topic-list">
+          <li>Agreed-value cover for classic, performance and high-value vehicles</li>
+          <li>Pleasure craft and marine cover, including liability extensions</li>
+          <li>Fine art, jewellery and private collection valuation-based cover</li>
+          <li>Annual revaluation so cover keeps pace with appreciating assets</li>
+        </ul>
+      </div>
+      <div class="topic-media">
+        <div class="img-placeholder-label">Lifestyle photography —<br>private collection, vehicle</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="case-study">
+  <div class="wrap">
+    <div class="eyebrow">Case Study</div>
+    <div class="case-grid">
+      <div>
+        <h2>Closing a coverage gap before it became a crisis</h2>
+        <p>A self-employed client had life cover but no income protection — a six-week injury would have meant six weeks with no income at all, business overheads included.</p>
+        <p>We restructured his risk plan to add income protection and adjusted his life cover to reflect his current bond and two new dependants, all within his existing premium budget.</p>
+      </div>
+      <div class="case-stats">
+        <div class="case-stat"><div class="num">R0 → R45k</div><div class="label">Monthly income now protected</div></div>
+        <div class="case-stat"><div class="num">R0 extra</div><div class="label">Net premium budget impact</div></div>
+        <div class="case-stat"><div class="num">2</div><div class="label">Coverage gaps identified &amp; closed</div></div>
+        <div class="case-stat"><div class="num">100%</div><div class="label">Aligned to current bond &amp; dependants</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="faq">
+  <div class="wrap">
+    <div class="section-head" style="border-bottom:none;">
+      <div>
+        <div class="eyebrow">Common Questions</div>
+        <h2>Risk Management FAQs</h2>
+      </div>
+      <p>What clients usually want to know before taking out cover.</p>
+    </div>
+    <div class="faq-item open">
+      <button class="faq-q">How much life cover do I actually need? <span class="plus">+</span></button>
+      <div class="faq-a"><p>It depends on your debt, dependants, and how many years of income they'd need replaced — not a flat multiple of salary. We calculate this specifically for your situation in the first consultation.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q">What's the difference between disability and income protection? <span class="plus">+</span></button>
+      <div class="faq-a"><p>Disability cover typically pays a lump sum for permanent or long-term incapacity. Income protection pays a monthly amount while you're temporarily unable to work. Most complete plans include both.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q">Will my premiums increase every year? <span class="plus">+</span></button>
+      <div class="faq-a"><p>Most risk policies escalate with inflation by default, though premium patterns vary by insurer and product type — we walk through exactly how your specific policy will behave before you sign.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q">Can you review cover I already have with another broker? <span class="plus">+</span></button>
+      <div class="faq-a"><p>Yes — a cover audit is often the first thing we do for a new client, checking for gaps, overlaps, and overpriced cover relative to what's currently available.</p></div>
+    </div>
+
+  </div>
+</section>
+<section class="cta-band" id="contact">
+  <div class="wrap">
+    <div class="eyebrow" style="justify-content:center;">Get Started</div>
+    <h2 style="margin-top:16px;">Let's close your coverage gaps.</h2>
+    <p>A first consultation costs nothing and commits you to nothing — just a clear view of where you stand today.</p>
+    <div class="hero-ctas">
+      <a href="#" class="btn-primary">Book a Consultation</a>
+      <a href="../index.html#solutions" class="btn-ghost">Back to All Solutions</a>
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-col">
+        <div class="logo" style="margin-bottom:18px;">AFKEN<span>·</span>GLOBAL WEALTH</div>
+        <p style="color:var(--ink-dim);font-size:14px;line-height:1.7;max-width:280px;">Independent financial planning and wealth management, advising individuals, families and businesses nationally.</p>
+      </div>
+      <div class="foot-col">
+        <h4>Solutions</h4>
+        <a href="wealth.html">Wealth Management</a>
+        <a href="risk.html">Risk Management</a>
+        <a href="sme.html">SME &amp; Corporate</a>
+        <a href="health.html">Health &amp; Wellness</a>
+      </div>
+      <div class="foot-col">
+        <h4>Company</h4>
+        <a href="about.html">About Us</a>
+        <a href="about.html#team">Our Team</a>
+        <a href="careers.html">Careers</a>
+        <a href="#">Outreach Projects</a>
+      </div>
+      <div class="foot-col">
+        <h4>Contact</h4>
+        <a href="#">contact@afken.co.za</a>
+        <a href="#">+27 (0)11 000 0000</a>
+        <a href="#">Claims &amp; Downloads</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <div>© 2026 Afken Global Wealth. All rights reserved.</div>
+      <div>Authorised Financial Services Provider</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.querySelectorAll('.faq-q').forEach(btn=>{
+    btn.addEventListener('click',()=>{
+      const item = btn.closest('.faq-item');
+      const wasOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(i=>i.classList.remove('open'));
+      if(!wasOpen) item.classList.add('open');
+    });
+  });
+  const sections = document.querySelectorAll('.topic[id]');
+  const navLinks = document.querySelectorAll('.subnav a');
+  window.addEventListener('scroll',()=>{
+    let current = sections[0]?.id;
+    sections.forEach(s=>{ if(window.scrollY >= s.offsetTop - 160) current = s.id; });
+    navLinks.forEach(a=>{ a.classList.toggle('active', a.getAttribute('href') === '#'+current); });
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Health &amp; Wellness | Afken Global Wealth</title>
+<meta name="description" content="Medical aid and gap cover comparisons, plus wellness programme guidance from Afken Global Wealth.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .breadcrumb{font-size:13px;color:var(--ink-faint);margin-bottom:22px;}
+  .breadcrumb a{color:var(--ink-faint);}
+  .breadcrumb a:hover{color:var(--teal);}
+  .page-hero{padding:170px 0 70px;border-bottom:1px solid var(--hairline);}
+  .page-hero h1{font-size:clamp(34px,4.6vw,56px);font-weight:800;letter-spacing:-0.02em;line-height:1.08;max-width:760px;}
+  .page-hero p{margin-top:22px;font-size:17px;line-height:1.7;color:var(--ink-dim);max-width:600px;}
+
+  .subnav{position:sticky;top:73px;z-index:50;background:#fff;border-bottom:1px solid var(--hairline);}
+  .subnav-inner{display:flex;gap:0;overflow-x:auto;}
+  .subnav a{white-space:nowrap;font-size:13.5px;font-weight:600;color:var(--ink-faint);padding:18px 20px;border-bottom:2px solid transparent;}
+  .subnav a:hover{color:var(--teal);}
+  .subnav a.active{color:var(--teal);border-bottom-color:var(--teal);}
+
+  .topic{padding:90px 0;border-bottom:1px solid var(--hairline);scroll-margin-top:130px;}
+  .topic:nth-child(even){background:var(--surface);}
+  .topic-grid{display:grid;grid-template-columns:0.9fr 1.1fr;gap:64px;}
+  .topic-grid.reverse{grid-template-columns:1.1fr 0.9fr;}
+  .topic-grid.reverse .topic-media{order:2;}
+  .topic h2{font-size:clamp(24px,2.6vw,32px);font-weight:800;letter-spacing:-0.01em;line-height:1.2;}
+  .topic .lede{font-size:15.5px;color:var(--ink-dim);line-height:1.75;margin-top:18px;}
+  .topic-list{margin-top:24px;display:flex;flex-direction:column;gap:14px;}
+  .topic-list li{list-style:none;display:flex;gap:12px;font-size:14.5px;color:var(--ink-dim);line-height:1.6;}
+  .topic-list li::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--teal);margin-top:8px;flex-shrink:0;}
+  .topic-media{border-radius:18px;background:linear-gradient(135deg,var(--surface) 0%,var(--surface-2) 100%);border:1px solid var(--hairline);display:flex;align-items:center;justify-content:center;min-height:280px;}
+  .topic-media .img-placeholder-label{font-size:12px;color:var(--ink-faint);text-align:center;padding:24px;}
+
+  .faq{padding:110px 0;}
+  .faq-item{border-bottom:1px solid var(--hairline);}
+  .faq-q{width:100%;text-align:left;background:none;border:none;cursor:pointer;padding:24px 0;display:flex;justify-content:space-between;align-items:center;gap:20px;font-size:16px;font-weight:600;color:var(--ink);font-family:'Inter',sans-serif;}
+  .faq-q .plus{font-size:20px;color:var(--teal);transition:transform .25s ease;flex-shrink:0;}
+  .faq-item.open .faq-q .plus{transform:rotate(45deg);}
+  .faq-a{max-height:0;overflow:hidden;transition:max-height .3s ease;}
+  .faq-item.open .faq-a{max-height:300px;}
+  .faq-a p{padding-bottom:24px;font-size:14.5px;color:var(--ink-dim);line-height:1.75;max-width:680px;}
+
+  .case-study{background:var(--footer-dark);padding:90px 0;color:#fff;}
+  .case-study .eyebrow{color:#7FB8B9;}
+  .case-study .eyebrow::before{background:#3D6E70;}
+  .case-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;margin-top:30px;align-items:center;}
+  .case-grid h2{font-size:clamp(24px,2.8vw,34px);font-weight:800;line-height:1.25;color:#fff;}
+  .case-grid p{color:#B8BCC0;font-size:15px;line-height:1.75;margin-top:18px;}
+  .case-stats{display:grid;grid-template-columns:1fr 1fr;gap:24px;}
+  .case-stat{border:1px solid #2C3236;border-radius:14px;padding:24px;}
+  .case-stat .num{font-size:28px;font-weight:800;color:#fff;}
+  .case-stat .label{font-size:12px;color:#8A8E92;margin-top:6px;}
+  @media(max-width:880px){
+    .topic-grid, .topic-grid.reverse{grid-template-columns:1fr;gap:32px;}
+    .topic-grid.reverse .topic-media{order:0;}
+    .case-grid{grid-template-columns:1fr;gap:32px;}
+    .case-stats{grid-template-columns:1fr 1fr;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <nav class="nav">
+    <div class="logo">AFKEN<span>·</span>GLOBAL WEALTH</div>
+    <div class="navlinks">
+      <a href="../index.html#solutions">Solutions</a>
+      <a href="../index.html#process">Approach</a>
+      <a href="../index.html#insights">Insights</a>
+      <a href="about.html">About</a>
+      <a href="../index.html#contact">Contact</a>
+    </div>
+    <a href="../index.html#contact" class="nav-cta">Book a Consultation</a>
+  </nav>
+</header>
+
+<section class="page-hero">
+  <div class="wrap">
+    <div class="breadcrumb"><a href="../index.html">Home</a> / <a href="../index.html#solutions">Our Solutions</a> / Health &amp; Wellness</div>
+    <div class="eyebrow">04 — Health &amp; Wellness</div>
+    <h1 style="margin-top:16px;">Healthcare cover that matches how you actually use it.</h1>
+    <p>Medical aid plans vary enormously in what they actually pay for. We compare options against your real usage patterns and budget — not just the marketing brochure.</p>
+  </div>
+</section>
+
+<nav class="subnav">
+  <div class="wrap subnav-inner">
+    <a href="#medical-aid" class="active">Medical Aid</a>
+    <a href="#gap-cover">Gap Cover</a>
+    <a href="#wellness">Wellness Programmes</a>
+  </div>
+</nav>
+<section class="topic" id="medical-aid">
+  <div class="wrap">
+    <div class="topic-grid">
+      <div>
+        <div class="eyebrow">Healthcare</div>
+        <h2 style="margin-top:14px;">Medical Aid Comparisons</h2>
+        <p class="lede">Switching medical aid plans, or schemes entirely, is one of the most commonly delayed financial decisions — usually because comparing options properly takes real time most people don't have.</p>
+        <ul class="topic-list">
+          <li>Side-by-side comparison across major South African medical schemes</li>
+          <li>Plan-matching based on actual claims history, not just premium cost</li>
+          <li>Annual scheme review during the medical aid open enrolment period</li>
+          <li>Support navigating waiting periods, late-joiner penalties and underwriting</li>
+        </ul>
+      </div>
+      <div class="topic-media">
+        <div class="img-placeholder-label">Lifestyle photography —<br>doctor consultation, healthcare</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="topic" id="gap-cover">
+  <div class="wrap">
+    <div class="topic-grid reverse">
+      <div>
+        <div class="eyebrow">Healthcare</div>
+        <h2 style="margin-top:14px;">Gap Cover</h2>
+        <p class="lede">Medical aid rarely covers 100% of specialist and in-hospital costs. Gap cover closes the shortfall between what your scheme pays and what providers actually charge — often the difference between a manageable bill and a financial shock.</p>
+        <ul class="topic-list">
+          <li>Shortfall cover for in-hospital specialist and procedure costs</li>
+          <li>Plan selection matched to your medical aid's specific reimbursement rates</li>
+          <li>Particularly relevant for chronic conditions and planned procedures</li>
+        </ul>
+      </div>
+      <div class="topic-media">
+        <div class="img-placeholder-label">Lifestyle photography —<br>hospital, patient care</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="topic" id="wellness">
+  <div class="wrap">
+    <div class="topic-grid">
+      <div>
+        <div class="eyebrow">Healthcare</div>
+        <h2 style="margin-top:14px;">Wellness Programme Guidance</h2>
+        <p class="lede">Most medical aids bundle in wellness programmes with real financial value — premium discounts, travel benefits, fitness rewards — that go unused simply because no one explains how to unlock them.</p>
+        <ul class="topic-list">
+          <li>Guidance on maximising wellness programme benefits tied to your medical aid</li>
+          <li>Integration with risk cover, where wellness status affects life and disability premiums</li>
+          <li>Practical onboarding so benefits are used from month one, not forgotten</li>
+        </ul>
+      </div>
+      <div class="topic-media">
+        <div class="img-placeholder-label">Lifestyle photography —<br>active lifestyle, fitness</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="case-study">
+  <div class="wrap">
+    <div class="eyebrow">Case Study</div>
+    <div class="case-grid">
+      <div>
+        <h2>Right-sizing medical cover for a growing family</h2>
+        <p>A family of four was paying for a top-tier medical aid plan they rarely used at that level, while carrying no gap cover at all — exposed on the one cost category most likely to actually hit them.</p>
+        <p>We moved them to a plan matched to their real usage, added gap cover for a fraction of the savings, and got them onto a wellness programme that now offsets a portion of their monthly premium.</p>
+      </div>
+      <div class="case-stats">
+        <div class="case-stat"><div class="num">R2,100</div><div class="label">Monthly premium saved</div></div>
+        <div class="case-stat"><div class="num">Added</div><div class="label">Gap cover, previously uninsured</div></div>
+        <div class="case-stat"><div class="num">15%</div><div class="label">Wellness programme premium discount unlocked</div></div>
+        <div class="case-stat"><div class="num">Same</div><div class="label">Hospital network access maintained</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="faq">
+  <div class="wrap">
+    <div class="section-head" style="border-bottom:none;">
+      <div>
+        <div class="eyebrow">Common Questions</div>
+        <h2>Health &amp; Wellness FAQs</h2>
+      </div>
+      <p>What clients usually ask before switching medical cover.</p>
+    </div>
+    <div class="faq-item open">
+      <button class="faq-q">Can I switch medical aid schemes at any time? <span class="plus">+</span></button>
+      <div class="faq-a"><p>Most schemes allow switching during an annual open enrolment window, though you can move between plans within the same scheme more flexibly. We'll confirm exact timing for your specific scheme.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q">Is gap cover worth it if I rarely go to hospital? <span class="plus">+</span></button>
+      <div class="faq-a"><p>Gap cover is relatively low-cost precisely because most people use it rarely — but a single major procedure without it can mean a five-figure out-of-pocket shortfall. It's a small premium against a large, if unlikely, risk.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q">Will switching plans affect cover for pre-existing conditions? <span class="plus">+</span></button>
+      <div class="faq-a"><p>This depends on the scheme and whether you're moving within the same scheme or to a new one — we check this specifically before recommending any switch so there are no coverage surprises.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q">Do you charge for medical aid comparisons? <span class="plus">+</span></button>
+      <div class="faq-a"><p>No — comparison and recommendation is part of our standard advisory service, at no separate cost to you.</p></div>
+    </div>
+
+  </div>
+</section>
+<section class="cta-band" id="contact">
+  <div class="wrap">
+    <div class="eyebrow" style="justify-content:center;">Get Started</div>
+    <h2 style="margin-top:16px;">Let's match your cover to how you live.</h2>
+    <p>A first consultation costs nothing and commits you to nothing — just a clear view of where you stand today.</p>
+    <div class="hero-ctas">
+      <a href="#" class="btn-primary">Book a Consultation</a>
+      <a href="../index.html#solutions" class="btn-ghost">Back to All Solutions</a>
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-col">
+        <div class="logo" style="margin-bottom:18px;">AFKEN<span>·</span>GLOBAL WEALTH</div>
+        <p style="color:var(--ink-dim);font-size:14px;line-height:1.7;max-width:280px;">Independent financial planning and wealth management, advising individuals, families and businesses nationally.</p>
+      </div>
+      <div class="foot-col">
+        <h4>Solutions</h4>
+        <a href="wealth.html">Wealth Management</a>
+        <a href="risk.html">Risk Management</a>
+        <a href="sme.html">SME &amp; Corporate</a>
+        <a href="health.html">Health &amp; Wellness</a>
+      </div>
+      <div class="foot-col">
+        <h4>Company</h4>
+        <a href="about.html">About Us</a>
+        <a href="about.html#team">Our Team</a>
+        <a href="careers.html">Careers</a>
+        <a href="#">Outreach Projects</a>
+      </div>
+      <div class="foot-col">
+        <h4>Contact</h4>
+        <a href="#">contact@afken.co.za</a>
+        <a href="#">+27 (0)11 000 0000</a>
+        <a href="#">Claims &amp; Downloads</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <div>© 2026 Afken Global Wealth. All rights reserved.</div>
+      <div>Authorised Financial Services Provider</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.querySelectorAll('.faq-q').forEach(btn=>{
+    btn.addEventListener('click',()=>{
+      const item = btn.closest('.faq-item');
+      const wasOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(i=>i.classList.remove('open'));
+      if(!wasOpen) item.classList.add('open');
+    });
+  });
+  const sections = document.querySelectorAll('.topic[id]');
+  const navLinks = document.querySelectorAll('.subnav a');
+  window.addEventListener('scroll',()=>{
+    let current = sections[0]?.id;
+    sections.forEach(s=>{ if(window.scrollY >= s.offsetTop - 160) current = s.id; });
+    navLinks.forEach(a=>{ a.classList.toggle('active', a.getAttribute('href') === '#'+current); });
+  });
+</script>
+</body>
+</html>

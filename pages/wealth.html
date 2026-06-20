@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wealth Management | Afken Global Wealth</title>
+<meta name="description" content="Local & global investments, retirement planning, trusts, estate planning, wills, education plans and preservation funds — advised nationally by Afken Global Wealth.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  /* page-specific additions */
+  .breadcrumb{font-size:13px;color:var(--ink-faint);margin-bottom:22px;}
+  .breadcrumb a{color:var(--ink-faint);}
+  .breadcrumb a:hover{color:var(--teal);}
+  .page-hero{padding:170px 0 70px;border-bottom:1px solid var(--hairline);}
+  .page-hero h1{font-size:clamp(34px,4.6vw,56px);font-weight:800;letter-spacing:-0.02em;line-height:1.08;max-width:760px;}
+  .page-hero p{margin-top:22px;font-size:17px;line-height:1.7;color:var(--ink-dim);max-width:600px;}
+
+  .subnav{position:sticky;top:73px;z-index:50;background:#fff;border-bottom:1px solid var(--hairline);}
+  .subnav-inner{display:flex;gap:0;overflow-x:auto;}
+  .subnav a{
+    white-space:nowrap;font-size:13.5px;font-weight:600;color:var(--ink-faint);
+    padding:18px 20px;border-bottom:2px solid transparent;
+  }
+  .subnav a:hover{color:var(--teal);}
+  .subnav a.active{color:var(--teal);border-bottom-color:var(--teal);}
+
+  .topic{padding:90px 0;border-bottom:1px solid var(--hairline);scroll-margin-top:130px;}
+  .topic:nth-child(even){background:var(--surface);}
+  .topic-grid{display:grid;grid-template-columns:0.9fr 1.1fr;gap:64px;}
+  .topic-grid.reverse{grid-template-columns:1.1fr 0.9fr;}
+  .topic-grid.reverse .topic-media{order:2;}
+  .topic h2{font-size:clamp(24px,2.6vw,32px);font-weight:800;letter-spacing:-0.01em;line-height:1.2;}
+  .topic .lede{font-size:15.5px;color:var(--ink-dim);line-height:1.75;margin-top:18px;}
+  .topic-list{margin-top:24px;display:flex;flex-direction:column;gap:14px;}
+  .topic-list li{list-style:none;display:flex;gap:12px;font-size:14.5px;color:var(--ink-dim);line-height:1.6;}
+  .topic-list li::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--teal);margin-top:8px;flex-shrink:0;}
+  .topic-media{border-radius:18px;background:linear-gradient(135deg,var(--surface) 0%,var(--surface-2) 100%);border:1px solid var(--hairline);display:flex;align-items:center;justify-content:center;min-height:280px;}
+  .topic-media .img-placeholder-label{font-size:12px;color:var(--ink-faint);text-align:center;padding:24px;}
+
+  .faq{padding:110px 0;}
+  .faq-item{border-bottom:1px solid var(--hairline);}
+  .faq-q{
+    width:100%;text-align:left;background:none;border:none;cursor:pointer;
+    padding:24px 0;display:flex;justify-content:space-between;align-items:center;gap:20px;
+    font-size:16px;font-weight:600;color:var(--ink);font-family:'Inter',sans-serif;
+  }
+  .faq-q .plus{font-size:20px;color:var(--teal);transition:transform .25s ease;flex-shrink:0;}
+  .faq-item.open .faq-q .plus{transform:rotate(45deg);}
+  .faq-a{max-height:0;overflow:hidden;transition:max-height .3s ease;}
+  .faq-item.open .faq-a{max-height:300px;}
+  .faq-a p{padding-bottom:24px;font-size:14.5px;color:var(--ink-dim);line-height:1.75;max-width:680px;}
+
+  .case-study{background:var(--footer-dark);padding:90px 0;color:#fff;}
+  .case-study .eyebrow{color:#7FB8B9;}
+  .case-study .eyebrow::before{background:#3D6E70;}
+  .case-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;margin-top:30px;align-items:center;}
+  .case-grid h2{font-size:clamp(24px,2.8vw,34px);font-weight:800;line-height:1.25;color:#fff;}
+  .case-grid p{color:#B8BCC0;font-size:15px;line-height:1.75;margin-top:18px;}
+  .case-stats{display:grid;grid-template-columns:1fr 1fr;gap:24px;}
+  .case-stat{border:1px solid #2C3236;border-radius:14px;padding:24px;}
+  .case-stat .num{font-size:28px;font-weight:800;color:#fff;}
+  .case-stat .label{font-size:12px;color:#8A8E92;margin-top:6px;}
+</style>
+</head>
+<body>
+
+<header>
+  <nav class="nav">
+    <div class="logo">AFKEN<span>·</span>GLOBAL WEALTH</div>
+    <div class="navlinks">
+      <a href="../index.html#solutions">Solutions</a>
+      <a href="../index.html#process">Approach</a>
+      <a href="../index.html#insights">Insights</a>
+      <a href="#">About</a>
+      <a href="../index.html#contact">Contact</a>
+    </div>
+    <a href="../index.html#contact" class="nav-cta">Book a Consultation</a>
+  </nav>
+</header>
+
+<section class="page-hero">
+  <div class="wrap">
+    <div class="breadcrumb"><a href="../index.html">Home</a> / <a href="../index.html#solutions">Our Solutions</a> / Wealth Management</div>
+    <div class="eyebrow">01 — Wealth Management</div>
+    <h1 style="margin-top:16px;">A coordinated plan for growing and transferring wealth.</h1>
+    <p>Investments, retirement, trusts, estate planning, wills, education funding and preservation — built as one connected strategy, not seven separate products.</p>
+  </div>
+</section>
+
+<nav class="subnav">
+  <div class="wrap subnav-inner">
+    <a href="#local" class="active">Local &amp; Global Investments</a>
+    <a href="#retirement">Retirement Plan</a>
+    <a href="#trusts">Trusts</a>
+    <a href="#estate">Estate Planning</a>
+    <a href="#wills">Wills</a>
+    <a href="#education">Education Plans</a>
+    <a href="#preservation">Preservation Funds</a>
+  </div>
+</nav>
+
+<section class="topic" id="local">
+  <div class="wrap">
+    <div class="topic-grid">
+      <div>
+        <div class="eyebrow">Investments</div>
+        <h2 style="margin-top:14px;">Local &amp; Global Investments</h2>
+        <p class="lede">Diversification isn't a buzzword on our side of the desk — it's the difference between a portfolio that survives a downturn and one that doesn't. We build portfolios across local and offshore markets, matched to your risk profile, time horizon and currency exposure.</p>
+        <ul class="topic-list">
+          <li>Local unit trusts, ETFs and direct equity portfolios across major asset managers</li>
+          <li>Offshore investment structuring for rand-hedge and currency diversification</li>
+          <li>Tax-free savings accounts and discretionary investment wrappers</li>
+          <li>Quarterly performance reviews benchmarked against your original plan, not just the market</li>
+        </ul>
+      </div>
+      <div class="topic-media">
+        <div class="img-placeholder-label">Lifestyle photography —<br>portfolio review meeting</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="topic" id="retirement">
+  <div class="wrap">
+    <div class="topic-grid reverse">
+      <div>
+        <div class="eyebrow">Retirement</div>
+        <h2 style="margin-top:14px;">Retirement Plan</h2>
+        <p class="lede">Retirement planning is really two separate problems: building enough capital, and then turning that capital into an income that lasts. We model both from day one, so the number you're saving toward actually means something.</p>
+        <ul class="topic-list">
+          <li>Retirement annuities and pension/provident fund structuring</li>
+          <li>Living annuity and life annuity comparisons at retirement</li>
+          <li>Income-in-retirement modelling, stress-tested against inflation and longevity</li>
+          <li>Tax-efficient contribution structuring within annual allowances</li>
+        </ul>
+      </div>
+      <div class="topic-media">
+        <div class="img-placeholder-label">Lifestyle photography —<br>retired couple, financial freedom</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="topic" id="trusts">
+  <div class="wrap">
+    <div class="topic-grid">
+      <div>
+        <div class="eyebrow">Structuring</div>
+        <h2 style="margin-top:14px;">Trusts</h2>
+        <p class="lede">A trust is a tool, not a tax shelter — used well, it protects assets for the people you intend to benefit, across generations, and outside of the delays and costs of an estate.</p>
+        <ul class="topic-list">
+          <li>Inter-vivos (living) and testamentary trust establishment</li>
+          <li>Trustee appointment guidance and governance structuring</li>
+          <li>Asset transfer planning into existing or new trust structures</li>
+          <li>Annual trust administration and compliance coordination with your accountant</li>
+        </ul>
+      </div>
+      <div class="topic-media">
+        <div class="img-placeholder-label">Lifestyle photography —<br>multi-generational family</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="topic" id="estate">
+  <div class="wrap">
+    <div class="topic-grid reverse">
+      <div>
+        <div class="eyebrow">Legacy</div>
+        <h2 style="margin-top:14px;">Estate Planning</h2>
+        <p class="lede">Without a plan, your estate is settled by formula, not by your intentions — and the costs (executor fees, estate duty, liquidity shortfalls) land on the people you meant to protect. We plan for all three in advance.</p>
+        <ul class="topic-list">
+          <li>Estate liquidity analysis — does your estate have cash to settle its own costs?</li>
+          <li>Estate duty and capital gains tax minimisation strategies</li>
+          <li>Coordination between your will, trusts and beneficiary nominations so nothing contradicts</li>
+          <li>Executor selection guidance and fee benchmarking</li>
+        </ul>
+      </div>
+      <div class="topic-media">
+        <div class="img-placeholder-label">Lifestyle photography —<br>advisor &amp; family, estate discussion</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="topic" id="wills">
+  <div class="wrap">
+    <div class="topic-grid">
+      <div>
+        <div class="eyebrow">Foundations</div>
+        <h2 style="margin-top:14px;">Wills</h2>
+        <p class="lede">More than 60% of South African adults don't have an up-to-date will. Without one, the Intestate Succession Act decides who inherits — not you. Drafting or updating yours is often the single highest-impact thing we do for a new client.</p>
+        <ul class="topic-list">
+          <li>Will drafting and safe custody, included as part of an ongoing advisory relationship</li>
+          <li>Guardian nomination guidance for minor children</li>
+          <li>Reviews triggered automatically after marriage, divorce, birth or major asset changes</li>
+          <li>Coordination with trust and estate structures to avoid conflicting instructions</li>
+        </ul>
+      </div>
+      <div class="topic-media">
+        <div class="img-placeholder-label">Lifestyle photography —<br>signing documents, advisor present</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="topic" id="education">
+  <div class="wrap">
+    <div class="topic-grid reverse">
+      <div>
+        <div class="eyebrow">Future Planning</div>
+        <h2 style="margin-top:14px;">Education Plans</h2>
+        <p class="lede">Education costs compound faster than most other household expenses. We build dedicated, ring-fenced investment plans for school and tertiary fees, so a market dip doesn't become a missed school term.</p>
+        <ul class="topic-list">
+          <li>Fee-inflation-adjusted projections per child, per institution type</li>
+          <li>Dedicated investment vehicles separate from retirement and general savings</li>
+          <li>Flexible contribution structures for variable income earners and business owners</li>
+        </ul>
+      </div>
+      <div class="topic-media">
+        <div class="img-placeholder-label">Lifestyle photography —<br>parent &amp; child, education planning</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="topic" id="preservation">
+  <div class="wrap">
+    <div class="topic-grid">
+      <div>
+        <div class="eyebrow">Continuity</div>
+        <h2 style="margin-top:14px;">Preservation Funds</h2>
+        <p class="lede">Changing jobs shouldn't mean cashing out your retirement savings and starting from zero. Preservation funds keep that capital working, tax-efficiently, until you actually retire.</p>
+        <ul class="topic-list">
+          <li>Pension and provident preservation fund setup on resignation or retrenchment</li>
+          <li>One-off withdrawal guidance — used wisely, since it's a once-off option per fund</li>
+          <li>Investment strategy review on transfer, rather than a default fund choice</li>
+        </ul>
+      </div>
+      <div class="topic-media">
+        <div class="img-placeholder-label">Lifestyle photography —<br>career transition, professional</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="case-study">
+  <div class="wrap">
+    <div class="eyebrow">Case Study</div>
+    <div class="case-grid">
+      <div>
+        <h2>Consolidating a fragmented retirement portfolio for a business-owning couple</h2>
+        <p>Two preservation funds, an old retirement annuity, and a discretionary portfolio sitting across three providers, with no shared strategy. We consolidated into a single coordinated plan, restructured for tax efficiency, and aligned the couple's retirement date with their business succession timeline.</p>
+        <p>The result wasn't just tidier paperwork — it was a clearer, lower-cost path to the income they'll actually need.</p>
+      </div>
+      <div class="case-stats">
+        <div class="case-stat"><div class="num">4 → 1</div><div class="label">Providers consolidated into one plan</div></div>
+        <div class="case-stat"><div class="num">0.6%</div><div class="label">Reduction in blended annual fees</div></div>
+        <div class="case-stat"><div class="num">3 yrs</div><div class="label">Retirement date brought forward</div></div>
+        <div class="case-stat"><div class="num">100%</div><div class="label">Aligned with business succession plan</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="faq">
+  <div class="wrap">
+    <div class="section-head" style="border-bottom:none;">
+      <div>
+        <div class="eyebrow">Common Questions</div>
+        <h2>Wealth Management FAQs</h2>
+      </div>
+      <p>Straight answers to what clients usually ask before their first consultation.</p>
+    </div>
+
+    <div class="faq-item open">
+      <button class="faq-q">How much money do I need to start working with an advisor? <span class="plus">+</span></button>
+      <div class="faq-a"><p>There's no minimum. Some clients start with a single retirement annuity; others bring an existing multi-provider portfolio to consolidate. The plan scales to where you are today.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q">Are you tied to specific product providers? <span class="plus">+</span></button>
+      <div class="faq-a"><p>No. Afken is independent and product-agnostic — we recommend across the major South African asset managers and insurers based on what fits your plan, not a sales target.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q">How often will my plan actually get reviewed? <span class="plus">+</span></button>
+      <div class="faq-a"><p>Annually as standard, plus triggered reviews after life events — marriage, a new child, a business sale, retirement, or significant market shifts that change your risk position.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q">I already have a will — do I still need an estate plan? <span class="plus">+</span></button>
+      <div class="faq-a"><p>A will states intentions; an estate plan makes sure your estate can actually fund those intentions — covering liquidity, estate duty and how your assets, trusts and policies interact.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q">Can you manage investments I hold with another provider? <span class="plus">+</span></button>
+      <div class="faq-a"><p>Yes — we regularly review and, where it benefits you, consolidate or transfer existing portfolios into a single coordinated strategy rather than leaving them to drift unmanaged.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band" id="contact">
+  <div class="wrap">
+    <div class="eyebrow" style="justify-content:center;">Get Started</div>
+    <h2 style="margin-top:16px;">Let's build your wealth plan.</h2>
+    <p>A first consultation costs nothing and commits you to nothing — just a clear view of where you stand today.</p>
+    <div class="hero-ctas">
+      <a href="#" class="btn-primary">Book a Consultation</a>
+      <a href="../index.html#solutions" class="btn-ghost">Back to All Solutions</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-col">
+        <div class="logo" style="margin-bottom:18px;">AFKEN<span>·</span>GLOBAL WEALTH</div>
+        <p style="color:var(--ink-dim);font-size:14px;line-height:1.7;max-width:280px;">Independent financial planning and wealth management, advising individuals, families and businesses nationally.</p>
+      </div>
+      <div class="foot-col">
+        <h4>Solutions</h4>
+        <a href="wealth.html">Wealth Management</a>
+        <a href="risk.html">Risk Management</a>
+        <a href="sme.html">SME &amp; Corporate</a>
+        <a href="health.html">Health &amp; Wellness</a>
+      </div>
+      <div class="foot-col">
+        <h4>Company</h4>
+        <a href="#">About Us</a>
+        <a href="#">Our Team</a>
+        <a href="#">Careers</a>
+        <a href="#">Outreach Projects</a>
+      </div>
+      <div class="foot-col">
+        <h4>Contact</h4>
+        <a href="#">contact@afken.co.za</a>
+        <a href="#">+27 (0)11 000 0000</a>
+        <a href="#">Claims &amp; Downloads</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <div>© 2026 Afken Global Wealth. All rights reserved.</div>
+      <div>Authorised Financial Services Provider</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.querySelectorAll('.faq-q').forEach(btn=>{
+    btn.addEventListener('click',()=>{
+      const item = btn.closest('.faq-item');
+      const wasOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(i=>i.classList.remove('open'));
+      if(!wasOpen) item.classList.add('open');
+    });
+  });
+
+  const sections = document.querySelectorAll('.topic[id]');
+  const navLinks = document.querySelectorAll('.subnav a');
+  window.addEventListener('scroll',()=>{
+    let current = sections[0]?.id;
+    sections.forEach(s=>{ if(window.scrollY >= s.offsetTop - 160) current = s.id; });
+    navLinks.forEach(a=>{
+      a.classList.toggle('active', a.getAttribute('href') === '#'+current);
+    });
+  });
+</script>
+
+</body>
+</html>

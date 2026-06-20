@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SME &amp; Corporate Solutions | Afken Global Wealth</title>
+<meta name="description" content="Employee benefits, keyman cover, buy-and-sell agreements, succession planning and commercial insurance for South African business owners.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .breadcrumb{font-size:13px;color:var(--ink-faint);margin-bottom:22px;}
+  .breadcrumb a{color:var(--ink-faint);}
+  .breadcrumb a:hover{color:var(--teal);}
+  .page-hero{padding:170px 0 70px;border-bottom:1px solid var(--hairline);}
+  .page-hero h1{font-size:clamp(34px,4.6vw,56px);font-weight:800;letter-spacing:-0.02em;line-height:1.08;max-width:760px;}
+  .page-hero p{margin-top:22px;font-size:17px;line-height:1.7;color:var(--ink-dim);max-width:600px;}
+
+  .subnav{position:sticky;top:73px;z-index:50;background:#fff;border-bottom:1px solid var(--hairline);}
+  .subnav-inner{display:flex;gap:0;overflow-x:auto;}
+  .subnav a{white-space:nowrap;font-size:13.5px;font-weight:600;color:var(--ink-faint);padding:18px 20px;border-bottom:2px solid transparent;}
+  .subnav a:hover{color:var(--teal);}
+  .subnav a.active{color:var(--teal);border-bottom-color:var(--teal);}
+
+  .topic{padding:90px 0;border-bottom:1px solid var(--hairline);scroll-margin-top:130px;}
+  .topic:nth-child(even){background:var(--surface);}
+  .topic-grid{display:grid;grid-template-columns:0.9fr 1.1fr;gap:64px;}
+  .topic-grid.reverse{grid-template-columns:1.1fr 0.9fr;}
+  .topic-grid.reverse .topic-media{order:2;}
+  .topic h2{font-size:clamp(24px,2.6vw,32px);font-weight:800;letter-spacing:-0.01em;line-height:1.2;}
+  .topic .lede{font-size:15.5px;color:var(--ink-dim);line-height:1.75;margin-top:18px;}
+  .topic-list{margin-top:24px;display:flex;flex-direction:column;gap:14px;}
+  .topic-list li{list-style:none;display:flex;gap:12px;font-size:14.5px;color:var(--ink-dim);line-height:1.6;}
+  .topic-list li::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--teal);margin-top:8px;flex-shrink:0;}
+  .topic-media{border-radius:18px;background:linear-gradient(135deg,var(--surface) 0%,var(--surface-2) 100%);border:1px solid var(--hairline);display:flex;align-items:center;justify-content:center;min-height:280px;}
+  .topic-media .img-placeholder-label{font-size:12px;color:var(--ink-faint);text-align:center;padding:24px;}
+
+  .faq{padding:110px 0;}
+  .faq-item{border-bottom:1px solid var(--hairline);}
+  .faq-q{width:100%;text-align:left;background:none;border:none;cursor:pointer;padding:24px 0;display:flex;justify-content:space-between;align-items:center;gap:20px;font-size:16px;font-weight:600;color:var(--ink);font-family:'Inter',sans-serif;}
+  .faq-q .plus{font-size:20px;color:var(--teal);transition:transform .25s ease;flex-shrink:0;}
+  .faq-item.open .faq-q .plus{transform:rotate(45deg);}
+  .faq-a{max-height:0;overflow:hidden;transition:max-height .3s ease;}
+  .faq-item.open .faq-a{max-height:300px;}
+  .faq-a p{padding-bottom:24px;font-size:14.5px;color:var(--ink-dim);line-height:1.75;max-width:680px;}
+
+  .case-study{background:var(--footer-dark);padding:90px 0;color:#fff;}
+  .case-study .eyebrow{color:#7FB8B9;}
+  .case-study .eyebrow::before{background:#3D6E70;}
+  .case-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;margin-top:30px;align-items:center;}
+  .case-grid h2{font-size:clamp(24px,2.8vw,34px);font-weight:800;line-height:1.25;color:#fff;}
+  .case-grid p{color:#B8BCC0;font-size:15px;line-height:1.75;margin-top:18px;}
+  .case-stats{display:grid;grid-template-columns:1fr 1fr;gap:24px;}
+  .case-stat{border:1px solid #2C3236;border-radius:14px;padding:24px;}
+  .case-stat .num{font-size:28px;font-weight:800;color:#fff;}
+  .case-stat .label{font-size:12px;color:#8A8E92;margin-top:6px;}
+  @media(max-width:880px){
+    .topic-grid, .topic-grid.reverse{grid-template-columns:1fr;gap:32px;}
+    .topic-grid.reverse .topic-media{order:0;}
+    .case-grid{grid-template-columns:1fr;gap:32px;}
+    .case-stats{grid-template-columns:1fr 1fr;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <nav class="nav">
+    <div class="logo">AFKEN<span>·</span>GLOBAL WEALTH</div>
+    <div class="navlinks">
+      <a href="../index.html#solutions">Solutions</a>
+      <a href="../index.html#process">Approach</a>
+      <a href="../index.html#insights">Insights</a>
+      <a href="about.html">About</a>
+      <a href="../index.html#contact">Contact</a>
+    </div>
+    <a href="../index.html#contact" class="nav-cta">Book a Consultation</a>
+  </nav>
+</header>
+
+<section class="page-hero">
+  <div class="wrap">
+    <div class="breadcrumb"><a href="../index.html">Home</a> / <a href="../index.html#solutions">Our Solutions</a> / SME &amp; Corporate Solutions</div>
+    <div class="eyebrow">03 — SME &amp; Corporate Solutions</div>
+    <h1 style="margin-top:16px;">Your business plan and your personal plan, working together.</h1>
+    <p>For business owners, the line between personal and business risk is thinner than most policies account for. We structure both sides so neither is left exposed if the other changes.</p>
+  </div>
+</section>
+
+<nav class="subnav">
+  <div class="wrap subnav-inner">
+    <a href="#employee-benefits" class="active">Employee Benefits</a>
+    <a href="#keyman">Keyman Cover</a>
+    <a href="#buy-sell">Buy-and-Sell</a>
+    <a href="#succession">Succession Planning</a>
+    <a href="#commercial-insurance">Commercial Insurance</a>
+  </div>
+</nav>
+<section class="topic" id="employee-benefits">
+  <div class="wrap">
+    <div class="topic-grid">
+      <div>
+        <div class="eyebrow">Corporate</div>
+        <h2 style="margin-top:14px;">Employee Benefits</h2>
+        <p class="lede">Group risk and retirement benefits are one of the most effective tools for attracting and retaining staff — and one of the most commonly mismanaged once set up.</p>
+        <ul class="topic-list">
+          <li>Group life, disability and funeral cover scheme design and provider selection</li>
+          <li>Group retirement annuity / provident fund structuring and ongoing administration</li>
+          <li>Annual scheme benchmarking against market alternatives</li>
+          <li>Staff communication support so employees actually understand their benefits</li>
+        </ul>
+      </div>
+      <div class="topic-media">
+        <div class="img-placeholder-label">Lifestyle photography —<br>team meeting, office</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="topic" id="keyman">
+  <div class="wrap">
+    <div class="topic-grid reverse">
+      <div>
+        <div class="eyebrow">Corporate</div>
+        <h2 style="margin-top:14px;">Keyman Cover</h2>
+        <p class="lede">If a critical person in your business — a founder, technical lead, or major rainmaker — were suddenly unavailable, would the business survive the transition? Keyman cover funds that gap.</p>
+        <ul class="topic-list">
+          <li>Valuation-based cover sizing tied to the keyperson's actual contribution to revenue or operations</li>
+          <li>Policy structuring to ensure proceeds are paid to the business, not the individual's estate</li>
+          <li>Annual reviews as the business grows or key roles change</li>
+        </ul>
+      </div>
+      <div class="topic-media">
+        <div class="img-placeholder-label">Lifestyle photography —<br>business leader, executive portrait</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="topic" id="buy-sell">
+  <div class="wrap">
+    <div class="topic-grid">
+      <div>
+        <div class="eyebrow">Corporate</div>
+        <h2 style="margin-top:14px;">Buy-and-Sell Agreements</h2>
+        <p class="lede">If a business partner dies or becomes permanently disabled, what happens to their shareholding? Without a funded agreement, surviving partners often end up co-owning a business with a grieving family.</p>
+        <ul class="topic-list">
+          <li>Drafting of buy-and-sell agreements aligned to your shareholders' agreement</li>
+          <li>Life and disability cover funding structured to match each partner's share value</li>
+          <li>Regular share valuation reviews to keep funding accurate as the business grows</li>
+        </ul>
+      </div>
+      <div class="topic-media">
+        <div class="img-placeholder-label">Lifestyle photography —<br>business partners, agreement signing</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="topic" id="succession">
+  <div class="wrap">
+    <div class="topic-grid reverse">
+      <div>
+        <div class="eyebrow">Corporate</div>
+        <h2 style="margin-top:14px;">Succession Planning</h2>
+        <p class="lede">Whether you're planning an exit in five years or fifty, succession planning today protects the value you've built and gives the next generation — family or otherwise — a clear path forward.</p>
+        <ul class="topic-list">
+          <li>Ownership transition structuring for family businesses and management buyouts</li>
+          <li>Integration with personal estate and retirement planning for exiting owners</li>
+          <li>Funding mechanisms for gradual or lump-sum ownership transfers</li>
+        </ul>
+      </div>
+      <div class="topic-media">
+        <div class="img-placeholder-label">Lifestyle photography —<br>handover, mentorship</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="topic" id="commercial-insurance">
+  <div class="wrap">
+    <div class="topic-grid">
+      <div>
+        <div class="eyebrow">Corporate</div>
+        <h2 style="margin-top:14px;">Commercial Insurance</h2>
+        <p class="lede">Office contents, business interruption, professional indemnity, public liability — commercial cover needs to reflect how your business actually operates, not a generic template policy.</p>
+        <ul class="topic-list">
+          <li>Business interruption cover sized against realistic downtime scenarios</li>
+          <li>Professional indemnity and public liability tailored to your sector</li>
+          <li>Office, equipment and stock cover with annual revaluation</li>
+        </ul>
+      </div>
+      <div class="topic-media">
+        <div class="img-placeholder-label">Lifestyle photography —<br>office interior, commercial space</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="case-study">
+  <div class="wrap">
+    <div class="eyebrow">Case Study</div>
+    <div class="case-grid">
+      <div>
+        <h2>Funding a buy-and-sell agreement for a three-partner practice</h2>
+        <p>Three equal partners in a professional services firm had a shareholders' agreement but no funded mechanism behind it — meaning a partner's death would have forced the others to either find cash fast or accept a new, unplanned co-owner.</p>
+        <p>We valued each partner's share, structured matched life cover to fund a buyout at fair value, and built the agreement so a transition — should it happen — is automatic and pre-funded.</p>
+      </div>
+      <div class="case-stats">
+        <div class="case-stat"><div class="num">3</div><div class="label">Partners, fully cross-insured</div></div>
+        <div class="case-stat"><div class="num">100%</div><div class="label">Of share value now funded</div></div>
+        <div class="case-stat"><div class="num">0</div><div class="label">Forced sales required on a partner's exit</div></div>
+        <div class="case-stat"><div class="num">Annual</div><div class="label">Valuation review cycle established</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="faq">
+  <div class="wrap">
+    <div class="section-head" style="border-bottom:none;">
+      <div>
+        <div class="eyebrow">Common Questions</div>
+        <h2>SME &amp; Corporate Solutions FAQs</h2>
+      </div>
+      <p>What business owners ask before restructuring corporate cover.</p>
+    </div>
+    <div class="faq-item open">
+      <button class="faq-q">How is keyman cover different from regular life insurance? <span class="plus">+</span></button>
+      <div class="faq-a"><p>Keyman cover is owned by and pays out to the business, sized to the financial impact of losing that person — not to their personal estate, which is what standard life cover does.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q">We already have a shareholders' agreement — do we still need buy-and-sell cover? <span class="plus">+</span></button>
+      <div class="faq-a"><p>An agreement states intent; buy-and-sell cover provides the actual cash to execute it. Without funding, a shareholders' agreement can be aspirational rather than enforceable in practice.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q">Can you manage employee benefits for a small team? <span class="plus">+</span></button>
+      <div class="faq-a"><p>Yes — group schemes can be structured for teams as small as a handful of employees, and we benchmark pricing so smaller schemes aren't penalised on rate.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q">Do you work with our existing accountant or attorney? <span class="plus">+</span></button>
+      <div class="faq-a"><p>Always. Succession, buy-and-sell and estate matters require close coordination with your legal and accounting advisors — we work alongside them, not around them.</p></div>
+    </div>
+
+  </div>
+</section>
+<section class="cta-band" id="contact">
+  <div class="wrap">
+    <div class="eyebrow" style="justify-content:center;">Get Started</div>
+    <h2 style="margin-top:16px;">Let's protect what you've built.</h2>
+    <p>A first consultation costs nothing and commits you to nothing — just a clear view of where you stand today.</p>
+    <div class="hero-ctas">
+      <a href="#" class="btn-primary">Book a Consultation</a>
+      <a href="../index.html#solutions" class="btn-ghost">Back to All Solutions</a>
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-col">
+        <div class="logo" style="margin-bottom:18px;">AFKEN<span>·</span>GLOBAL WEALTH</div>
+        <p style="color:var(--ink-dim);font-size:14px;line-height:1.7;max-width:280px;">Independent financial planning and wealth management, advising individuals, families and businesses nationally.</p>
+      </div>
+      <div class="foot-col">
+        <h4>Solutions</h4>
+        <a href="wealth.html">Wealth Management</a>
+        <a href="risk.html">Risk Management</a>
+        <a href="sme.html">SME &amp; Corporate</a>
+        <a href="health.html">Health &amp; Wellness</a>
+      </div>
+      <div class="foot-col">
+        <h4>Company</h4>
+        <a href="about.html">About Us</a>
+        <a href="about.html#team">Our Team</a>
+        <a href="careers.html">Careers</a>
+        <a href="#">Outreach Projects</a>
+      </div>
+      <div class="foot-col">
+        <h4>Contact</h4>
+        <a href="#">contact@afken.co.za</a>
+        <a href="#">+27 (0)11 000 0000</a>
+        <a href="#">Claims &amp; Downloads</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <div>© 2026 Afken Global Wealth. All rights reserved.</div>
+      <div>Authorised Financial Services Provider</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.querySelectorAll('.faq-q').forEach(btn=>{
+    btn.addEventListener('click',()=>{
+      const item = btn.closest('.faq-item');
+      const wasOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(i=>i.classList.remove('open'));
+      if(!wasOpen) item.classList.add('open');
+    });
+  });
+  const sections = document.querySelectorAll('.topic[id]');
+  const navLinks = document.querySelectorAll('.subnav a');
+  window.addEventListener('scroll',()=>{
+    let current = sections[0]?.id;
+    sections.forEach(s=>{ if(window.scrollY >= s.offsetTop - 160) current = s.id; });
+    navLinks.forEach(a=>{ a.classList.toggle('active', a.getAttribute('href') === '#'+current); });
+  });
+</script>
+</body>
+</html>
